@@ -4,10 +4,10 @@ A Python application that fetches real-time weather data from OpenWeatherMap API
 
 Features
 -------------------------------------------------------------------------------------------
-Real-Time Weather Data: Fetches current weather data from OpenWeatherMap API with real-time updates.
-Multi-City Support & Comparison: View weather differences between various locations simultaneously.
-Data Management & Persistence: Maintain complete weather history for trend analysis and pattern recognition.
-Application Architecture:Easily extensible architecture for adding new features and data sources.
+* Real-Time Weather Data: Fetches current weather data from OpenWeatherMap API with real-time updates.
+* Multi-City Support & Comparison: View weather differences between various locations simultaneously.
+* Data Management & Persistence: Maintain complete weather history for trend analysis and pattern recognition.
+* Application Architecture: Easily extensible architecture for adding new features and data sources.
 
 Project Structure
 -------------------------------------------------------------------------------------------
