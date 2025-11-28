@@ -11,7 +11,7 @@ class WeatherDataLogger:
         self.api_key = api_key
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
         self.db_name = db_name
-        self.setup_database()
+        self.setup_database()  # Create database and tables on initialization
     
     def setup_database(self):
         """Initialize SQLite database with required tables"""
@@ -43,8 +43,8 @@ class WeatherDataLogger:
         try:
             # API parameters
             params = {
-                'q': city_name,
-                'appid': self.api_key,
+                'q': city_name, # City name
+                'appid': self.api_key,  # API key
                 'units': 'metric'  # For Celsius temperature
             }
             
