@@ -2,6 +2,13 @@ Real-Time Weather Information & Data Logger
 -------------------------------------------------------------------------------------------
 A Python application that fetches real-time weather data from OpenWeatherMap API, displays detailed weather information, and automatically logs all data with timestamps to SQLite database and text files.
 
+Project Structure
+-------------------------------------------------------------------------------------------
+WEATHER.LOGGER/
+├── requirements.txt      
+├── weather_app.py       
+└── weather_data.db
+
 Features
 -------------------------------------------------------------------------------------------
 * Real-Time Weather Data: Fetches current weather data from OpenWeatherMap API with real-time updates
@@ -12,55 +19,35 @@ Features
 
 * Application Architecture: Easily extensible architecture for adding new features and data sources.
 
-Project Structure
--------------------------------------------------------------------------------------------
-WEATHER.LOGGER/
-├── requirements.txt      
-├── weather_app.py       
-└── weather_data.db
-
 Requirements
 -------------------------------------------------------------------------------------------
-* Requires Python 3.6+
+Python 3.6+
+requests library
 
-* Cross-platform compatibility
+Installation
+------------------------------------------------------------------------------------------
+1. Clone or download the project files
+2. Install required dependencies:
+   bash
+   pip install requests
 
-Data Collection
+Database Schema
 -------------------------------------------------------------------------------------------
-* Real-time weather parameter recording
+The apllication uses sql with the following table structure:
+``` sql
+CREATE TABLE weather_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    city_name TEXT NOT NULL,
+    temperature REAL NOT NULL,
+    humidity INTEGER NOT NULL,
+    weather_description TEXT NOT NULL,
+    wind_speed REAL NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
 
-* Timestamped entries with precise datetime tracking
 
-* Multiple meteorological parameters support
 
-* Batch data insertion capabilities
 
- Data Management
- ------------------------------------------------------------------------------------------
-* Database is automatically created on first run
 
-* Data persists between sessions
 
-* Export functionality available for data analysis
-
-* Regular backups recommended
-
-Storage Efficiency
--------------------------------------------------------------------------------------------
-* Compressed data storage format
-
-* Indexed searching for fast retrieval
-
-* Efficient memory utilization
-
-* Scalable architecture for long-term use
-
-Security & Reliability
--------------------------------------------------------------------------------------------
-* Local-only data storage (no cloud dependencies)
-
-* Transaction-based operations for data consistency
-
-* Automatic recovery from system interruptions
-
-* Regular integrity checks
