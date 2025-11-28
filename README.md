@@ -30,9 +30,11 @@ Installation
 1. Clone or download the project files
 
 2. Install required dependencies:
+   ```sql
    bash
    pip install requests
-
+   ```
+   
 3. Get an API key from [OpenWeatherMap](https://openweathermap.org/api)
    - Sign up for a free account
    - Generate an API key in your dashboard
