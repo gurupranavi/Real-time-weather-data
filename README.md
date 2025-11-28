@@ -19,6 +19,12 @@ WEATHER.LOGGER/
 ├── weather_app.py       
 └── weather_data.db
 
+Requirements
+-------------------------------------------------------------------------------------------
+* Requires Python 3.6+
+
+* Cross-platform compatibility
+
 Data Collection
 -------------------------------------------------------------------------------------------
 * Real-time weather parameter recording
@@ -28,6 +34,16 @@ Data Collection
 * Multiple meteorological parameters support
 
 * Batch data insertion capabilities
+
+ Data Management
+ ------------------------------------------------------------------------------------------
+* Database is automatically created on first run
+
+* Data persists between sessions
+
+* Export functionality available for data analysis
+
+* Regular backups recommended
 
 Storage Efficiency
 -------------------------------------------------------------------------------------------
