@@ -54,6 +54,28 @@ CREATE TABLE weather_data (
 );
 ```
 
+Error Handling
+-------------------------------------------------------------------------------------------
+The application includes:
+
+* API request timeout management
+
+* Network failure retry logic
+
+* Data validation before storage
+
+* Graceful degradation when services are unavailable
+
+Data Storage & Monitoring
+--------------------------------------------------------------------------------------------
+* SQLite Database Integration: structured storage with tables for weather metrics, timestamps, and city information
+
+* Structured Schema Design: organizetable structure with columns for temperature, humidity, weather conditions, wind speed
+
+* Application Activity Tracking: Logs API calls, data fetch operations
+
+* Performance Metrics Collection: Tracks data retrieval times, storage performance
+
 Database output
 --------------------------------------------------------------------------------------------
 ``` sql
